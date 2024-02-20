@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    :root {
+
+        /* font-size:                  62.5%;      Converting the root font size (16px) to 10px - 10-base system, easier to calculate rem values
+        --font-size-base:           1.6rem;     Setting the body font size to 1.6rem, which is 16px
+        --golden-ratio:             1.618;
+        --font-size-caption:        calc(var(--font-size-base) / var(--golden-ratio));
+        --font-size-h5:             calc(var(--font-size-base) * var(--golden-ratio));
+        --font-size-h3:             calc(var(--font-size-h5) * var(--golden-ratio));
+        --font-size-h1:             calc(var(--font-size-h3) * var(--golden-ratio));
+        --font-size-hero-title:     calc(var(--font-size-h1) * var(--golden-ratio)); */
+
+
+    }
+
+    /* Font Size Classes - https://websquadron.co.uk/font-clamp-generator/ */
+    .fs-hero-title  { @apply text-[clamp(5rem,-0.2236rem+17.368vw,18.75rem)] leading-[0.9] }
+    .fs-h1          { @apply text-[clamp(2.5rem,0.96931rem+6.445vw,7.15625rem)] leading-[1] tracking-[-.03em] }
+    .fs-h3          { @apply text-[clamp(2.5rem,1.9078rem+2.961vw,4.75rem)] leading-[1.1] tracking-[-.02em] }
+    .fs-h5          { @apply text-[clamp(1.09375rem,0.82235rem+1.357vw,2.125rem)] leading-[1.4] }
+    .fs-base        { @apply text-[clamp(0.9375rem,0.8141rem+0.617vw,1.40625rem)] }
+    .fs-caption     { @apply text-[clamp(0.8125rem,0.7203rem+0.461vw,1.1625rem)] }
+
+}

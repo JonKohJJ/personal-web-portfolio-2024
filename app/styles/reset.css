@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    /* CSS RESET - https://www.joshwcomeau.com/css/custom-css-reset/ */
+    *, *::before, *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;   /* Use a more-intuitive box-sizing model */
+    }
+    body {
+        line-height: 1.5;
+        /* -webkit-font-smoothing: antialiased;  Improve text rendering */
+    }
+    img, picture, video, canvas, svg {  /* Improve media defaults */
+        display: block;
+        max-width: 100%;
+    }
+    input, button, textarea, select {   /* Remove built-in form typography styles */
+        font: inherit;
+    }
+    p, h1, h2, h3, h4, h5, h6 {   /* Avoid text overflows */
+        overflow-wrap: break-word;
+    }
+    #root, #__next {  /* Create a root stacking context - This last one is optional. It's generally only needed if you use a JS framework like React.*/
+        isolation: isolate;
+    }
+
+}
