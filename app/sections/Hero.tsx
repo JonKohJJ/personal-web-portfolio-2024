@@ -57,7 +57,7 @@ export default function Hero() {
                 <div className='hero-bottom-right hidden
                     lg:block
                 '>
-                    <p className='fs-caption opacity-[0.5] pb-4 mb-4 border-solid border-b-[1px] border-color-border-light dark:border-color-border-dark'>Let's get conected</p>
+                    <p className='fs-caption opacity-[0.5] pb-4 mb-4 border-solid border-b-[1px] border-color-border-light dark:border-color-border-dark'>Let&apos;s get conected</p>
                     {footerLinks.map(link => {
                         return(
                             <LinkComponent key={link.title} title={link.title} href={link.href} hasDestination={link.hasDestination} additionalClasses='block mb-2 w-fit' />
