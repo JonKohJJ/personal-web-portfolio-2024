@@ -1,47 +1,45 @@
+import Link from 'next/link'
 import LinkComponent from '../components/Links/LinkComponent'
-
-export const footerLinks = [
-    {
-        title: 'Linkedin',
-        href: 'https://www.linkedin.com/in/jonathankohjj/',
-    },
-    {
-        title: 'Github',
-        href: 'https://github.com/JonKohJJ',
-    },
-    {
-        title: 'Instagram',
-        href: '',
-    },
-    {
-        title: 'Email',
-        href: '',
-    },
-    
-]
+import { footerLinks } from '../constants/data'
 
 export default function Footer() {
   return (
-    <footer className='footer py-[2em] text-center border-solid border-t-[1px] border-color-border mt-[auto]
+    <div className={`wrapper
 
-        lg:flex 
-        lg:flex-row-reverse
-        lg:justify-between
-    '>
+        container 
+        p-4
+        lg:p-0
+        flex
+        flex-col
 
-        <div className='footer-links flex justify-center mb-[10px] 
+    `}>
+        <footer className='footer py-[2em] text-center border-solid border-t-[1px] border-color-border-light dark:border-color-border-dark mt-[auto]
 
-            lg:mb-[0]
+            lg:flex 
+            lg:flex-row-reverse
+            lg:justify-between
         '>
-            {footerLinks.map(link => {
-                return(
-                    <LinkComponent key={link.title} title={link.title} href={link.href} additionalClasses='mr-8' openInNewTab={true}/>
-                )
-            })}
-        </div>
 
-        <p className='fs-caption'>&copy; {new Date().getFullYear()} All Rights Reserved. Coded with ❤️️</p>
-            
-    </footer>
+            <div className='footer-links flex justify-center mb-[10px] 
+
+                lg:mb-[0]
+            '>
+                {footerLinks.map(link => {
+                    return(
+                        <LinkComponent key={link.title} title={link.title} href={link.href} hasDestination={link.hasDestination} 
+                            additionalClasses='mr-4 md:mr-8 last:mr-0' 
+                        />
+                    )
+                })}
+            </div>
+
+            <div className='lg:flex gap-8'>
+                <p className='fs-caption mb-[10px] lg:mb-0'>&copy; {new Date().getFullYear()} All Rights Reserved. Coded with ❤️️</p>
+                <LinkComponent title='Portfolio V1 (2021)' href='https://jonkohjj.github.io/Personal-Web-Portfolio-2021/' hasDestination={true}
+                    additionalClasses='mr-4 md:mr-8 last:mr-0 opacity-[0.6]' 
+                />
+            </div>
+        </footer>
+    </div>
   )
 }

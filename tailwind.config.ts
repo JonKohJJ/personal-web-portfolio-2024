@@ -11,10 +11,12 @@ const config: Config = {
       colors: {
         'color-light':  'var(--color-light)',
         'color-dark':   'var(--color-dark)',
-        'color-border':   'var(--color-border)',
+        'color-border-light':   'var(--color-border-light)',
+        'color-border-dark':   'var(--color-border-dark)',
       },
     },
   },
   plugins: [],
+  darkMode: 'class',
 };
 export default config;

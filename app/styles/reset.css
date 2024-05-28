@@ -22,7 +22,7 @@
         font: inherit;
     }
     p, h1, h2, h3, h4, h5, h6 {   /* Avoid text overflows */
-        overflow-wrap: break-word;
+        /* overflow-wrap: break-word; */
     }
     #root, #__next {  /* Create a root stacking context - This last one is optional. It's generally only needed if you use a JS framework like React.*/
         isolation: isolate;

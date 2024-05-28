@@ -9,20 +9,8 @@
         /* Colors */
         --color-light:  #efefef;
         --color-dark:   #111414;
-        --color-border: #11141419
-    }
-
-    /* Link Bottom Border Animation */
-    .link-component::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 1px;
-        background: var(--color-dark);
-        transition: width .3s;
-    }
-    .link-component:hover::after {
-        width: 100%;
+        --color-border-light: #1114141a;    /* border color when its light mode */
+        --color-border-dark: #efefef1a;     /* border color when its dark mode */
     }
     
 }
