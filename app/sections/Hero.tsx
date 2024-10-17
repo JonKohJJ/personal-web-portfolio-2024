@@ -28,7 +28,7 @@ export default function Hero() {
                 lg:mb-36
 
             '>
-                <p className='fs-hero-title'>Fullstack Engineer</p>
+                <p className='fs-hero-title'>Software Engineer</p>
 
                 <p className='fs-base opacity-[0.6] mt-6 max-w-[400px]
 

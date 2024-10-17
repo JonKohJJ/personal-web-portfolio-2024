@@ -80,7 +80,6 @@ export default function RootLayout({
           justify-center
           items-center
           min-h-screen
-
       `}>
           <ThemeContextProvider>
               
