@@ -3,6 +3,8 @@ import LinkComponent from "../components/Links/LinkComponent";
 import { footerLinks } from "../constants/data";
 
 export default function Hero() {
+
+      
   return (
     <div className={`wrapper
 
@@ -48,10 +50,10 @@ export default function Hero() {
 
             '>
                 <div className="hero-bottom-left">
-                    <p className='fs-h5 lg:max-w-[800px]
-                        
-                    '>I engineer seamless software solutions, from web applications to scalable systems, to empower businesses in the digital age.</p>
-                    <PrimaryButton title='Drop me a line' href='' additionalClasses='mt-6 lg:mt-10'/>
+                    <p className='fs-h5 lg:max-w-[800px]'>
+                        I craft dynamic software solutions, from engaging web applications to transformative systems, empowering businesses to thrive in the digital era.
+                    </p>
+                    <PrimaryButton title='View My Resume' href='/Jonathan%20Koh%20Resume%202024.pdf' openInNewTab={true} additionalClasses='mt-6 lg:mt-10'/>
                 </div>
 
                 <div className='hero-bottom-right hidden
@@ -59,7 +61,7 @@ export default function Hero() {
                 '>
                     <p className='fs-caption opacity-[0.5] pb-4 mb-4 border-solid border-b-[1px] border-color-border-light dark:border-color-border-dark'>Let&apos;s get conected</p>
                     {footerLinks.map(link => {
-                        return(
+                        return( 
                             <LinkComponent key={link.title} title={link.title} href={link.href} hasDestination={link.hasDestination} additionalClasses='block mb-2 w-fit' />
                         )
                     })}

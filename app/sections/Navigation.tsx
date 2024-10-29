@@ -1,4 +1,5 @@
 
+import PrimaryButton from '../components/Buttons/PrimaryButton'
 import LinkComponent from '../components/Links/LinkComponent'
 import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher'
 import { navigationLinks } from '../constants/data'
@@ -30,7 +31,7 @@ export default function Navigation() {
             <div className='header-links flex flex-col lg:flex-row'>
                 {navigationLinks.map(link => {
                     return(
-                        <LinkComponent key={link.title} title={link.title} href={link.href} additionalClasses='
+                        <LinkComponent key={link.title} title={link.title} href={link.href} hasDestination={link.hasDestination} additionalClasses='
                             py-1 
                             lg:mr-12
                         '/>

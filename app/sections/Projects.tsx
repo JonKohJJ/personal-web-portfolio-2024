@@ -1,4 +1,5 @@
-import { projectChildren, projectChildrenDetails, technologiesDetails } from "../constants/data"
+import { projectChildren, projectChildrenDetails } from "../constants/data"
+import ProjectHover from "../components/ProjectHover";
 
 export default function Projects() {
 
@@ -16,29 +17,14 @@ export default function Projects() {
 
                 <div className='projects-header flex'>
                     <p className='fs-h5 pb-6'>Some of My Work</p>
-                    <span className='fs-base ml-2 font-light'>({projectChildren.length})</span>
+                    <span className='fs-base ml-2'>({projectChildren.length})</span>
                 </div>
 
                 <div className='projects-list flex flex-col'>
                     {projectChildren.map((projectName: string) => {
-
                         let projectDetails = projectChildrenDetails[projectName]
-
                         return(
-                            <a key={projectDetails.title} href={projectDetails.href} className='py-8 lg:py-14 flex flex-col-reverse lg:flex-row justify-between lg:items-end border-solid border-t-[1px] border-color-border-light dark:border-color-border-dark'>
-
-                                <div className='project-left'>
-                                    <p className='fs-h1'>{projectDetails.title}</p>
-                                    <p className='fs-base mt-2'>{projectDetails.subTitle_short}</p>
-                                </div>
-
-                                <div className="project-right">
-                                    <p className="fs-caption italic font-light mb-4 lg:mb-0">{projectDetails.year}</p>
-                                </div>
-
-
-
-                            </a>
+                            <ProjectHover key={projectDetails.title} projectDetails={projectDetails}/>
                         )
                     })}
                 </div>

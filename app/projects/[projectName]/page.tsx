@@ -1,7 +1,7 @@
 import PrimaryButton from "@/app/components/Buttons/PrimaryButton"
 import { projectChildrenDetails, technologiesDetails } from "@/app/constants/data"
-import Link from "next/link"
 import React from "react"
+import Image from "next/image";
 
 export default function ProjectDetails({ 
     
@@ -24,12 +24,26 @@ export default function ProjectDetails({
             flex-col
             min-h-screen
         '>
+            <div className="project-hero-image 
+                    h-[500px]
+                    w-screen
+                    ml-[50%]
+                    translate-x-[-50%]
+                ">
+                <Image 
+                    src={projectDetails.hero_image}
+                    alt={`${projectDetails.title} Hero Image`}
+                    quality={100}
+                    priority
+                    className='w-full h-full object-cover object-top'
+                />
+            </div>
+
             <div className="project-summary 
                 max-w-[1000px]
                 mb-16
-                mt-80
             ">
-                <p className="fs-h1 mb-8">{projectDetails.title}</p>
+                <p className="fs-h1 mb-8 mt-20">{projectDetails.title}</p>
                 <p className="fs-base mb-6">{projectDetails.subTitle_long}</p>
                 <div className="technologies
                     flex 
@@ -58,6 +72,7 @@ export default function ProjectDetails({
             </div>
 
             <div className="project-buttons
+                max-w-[1000px]
                 mb-16
                 flex 
                 flex-col 
@@ -69,6 +84,7 @@ export default function ProjectDetails({
             </div>
 
             <div className="project-description
+                max-w-[1000px]
                 mb-16
             ">
                 {projectDetails.description.map((des, index) => {
@@ -82,19 +98,6 @@ export default function ProjectDetails({
                     </div>
                 })}
             </div>
-
-            {/* Might be empty */}
-            {projectDetails.concepts ? 
-                <div className="project-concepts
-                    mb-16
-                ">
-                    <p className="fs-base">Concepts:</p>
-                    {projectDetails.concepts.map((des, index) => {
-                        return <p key={index} className="fs-base font-light">{des}</p>
-                    })}
-                </div>
-                : null
-            }
 
         </div>
     )

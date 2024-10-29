@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Profile_Image from '../../public/images/profile.jpeg'
 import PrimaryButton from "../components/Buttons/PrimaryButton";
+import TypingText from "../components/TypingText";
 
 export default function CallToAction() {
   return (
@@ -36,13 +37,11 @@ export default function CallToAction() {
                     className='float-left size-[clamp(2.5rem,6vw,6rem)] rounded-full mr-2 lg:mr-4'
                 />
 
-                <p className='fs-h1'>
-                    Let’s talk about a project, collaboration or an idea you may have
-                </p>
+                <TypingText />
 
             </div>
 
-            <PrimaryButton title='Drop me a line' href=''/>
+            <PrimaryButton title='View My Resume' href='/Jonathan%20Koh%20Resume%202024.pdf' openInNewTab={true} />
 
         </section>
     </div>

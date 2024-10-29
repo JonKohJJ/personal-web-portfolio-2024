@@ -7,24 +7,22 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiSupabaseFill } from "react-icons/ri";
 import { FaCss3Alt } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+import { StaticImageData } from "next/image";
 
+import Tithely_Hero_Image from '../../public/images/Tithely_Hero_Image.png'
+import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
 
 export const navigationLinks = [
+    // {
+    //     title:              'About',
+    //     href:               '/about',
+    //     hasDestination:     false,
+    // },
     {
-        title:              'About',
-        href:               '',
-    },
-    {
-        title:              'Work',
-        href:               '',
-    },
-    {
-        title:              'Process',
-        href:               '',
-    },
-    {
-        title:              'Drop me a line',
-        href:               '',
+        title:              'View My Resume',
+        href:               '/Jonathan%20Koh%20Resume%202024.pdf',
+        hasDestination:     true,
     },
 ]
 
@@ -51,7 +49,7 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
         title:              'Tithely', 
         subTitle_short:     'Finance Budgeting and Tracking Web Application',
         year:               2023,
-        subTitle_long:      'Tithely is a finance budgeting and tracking app, built with React JS for a modern and responsive user interface. Using TypeScript ensures type safety and scalability, while Vite handles fast development and optimized builds. On the backend, Supabase handles authentication, powers real-time data management and ensure seamless performance and reliability.',
+        subTitle_long:      'Tithely is a finance budgeting and tracking app, built with React JS for a modern and responsive user interface. TypeScript ensures type safety and scalability, while Vite enables fast development and optimized builds. Node.js powers backend logic, and Supabase manages authentication and real-time data, ensuring seamless performance and reliability.',
         description:        [
                                 [
                                     'On the Planner page, users can:',
@@ -86,7 +84,8 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
         href:               '/projects/Tithely',
         href_livesite:      'https://jonkohjj.github.io/tithely-supabase/',
         href_github:        'https://github.com/JonKohJJ/tithely-supabase',
-        technologies:       ['reactjs', 'tailwind', 'typescript', 'vite', 'supabase']
+        technologies:       ['nodejs', 'reactjs', 'tailwind', 'typescript', 'vite', 'supabase'],
+        hero_image:         Tithely_Hero_Image
     },
     'Dojo': {
         title:              'My Dojo',
@@ -101,48 +100,55 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
                                     '3. Assign projects to other team members',
                                     '4. Add comments on projects',
                                     '5. View which users are currently online',
-                                ]
+                                ],
+                                [
+                                    'Concepts:',
+                                    '1. Firebase Set Up',
+                                    '2. Custom React Hooks - Login, Signup, etc',
+                                    '3. useContext for User Authentication',
+                                    '4. React Router & Pages',
+                                    '5. Conditional Rendering',
+                                    '6. Form Handling & Signing user up',
+                                    '7. Redirects & Route Gaurds',
+                                    '8. Fetching all users & show online users',
+                                    '9. Fetching all projects',
+                                    '10. Fetching individual project details based on their unique id',
+                                    '11. Making Project Filters',
+                                    '12. Firestore Rules',
+                                ],
                             ],
         href:               '/projects/Dojo',
         href_livesite:      'https://thedojosite-33599.firebaseapp.com',
         href_github:        'https://github.com/JonKohJJ/the-dojo',
-        technologies:       ['reactjs', 'css', 'firebase'],
-        concepts:           [
-                                '1. Firebase Set Up',
-                                '2. Custom React Hooks - Login, Signup, etc',
-                                '3. useContext for User Authentication',
-                                '4. React Router & Pages',
-                                '5. Conditional Rendering',
-                                '6. Form Handling & Signing user up',
-                                '7. Redirects & Route Gaurds',
-                                '8. Fetching all users & show online users',
-                                '9. Fetching all projects',
-                                '10. Fetching individual project details based on their unique id',
-                                '11. Making Project Filters',
-                                '12. Firestore Rules',
-                            ],
+        technologies:       ['nodejs', 'reactjs', 'css', 'firebase'],
+        hero_image:         Dojo_Hero_Image,
     },
 }
 
-type projectChildrenDetails_Type = {
-    [key: string] : {
-        title:              string;
-        subTitle_short:     string;
-        year:               number;       
-        subTitle_long:      string;
-        description:        string[][];
-        href:               string;
-        href_livesite:      string;
-        href_github:        string;
-        technologies:       string[];
-        improvements?:       string;
-        children?:          string[];
-        concepts?:          string[];
-    }
+export type projectChildrenDetails_Type = {
+    [key: string] : ProjectDetailsProps
 }
 
+export type ProjectDetailsProps = {
+    title: string;
+    subTitle_short: string;
+    year: number;
+    subTitle_long: string;
+    description: string[][];
+    href: string;
+    href_livesite: string;
+    href_github: string;
+    technologies: string[];
+    improvements?: string;
+    children?: string[];
+    hero_image: StaticImageData;
+};
 
 export const technologiesDetails: technologiesDetails_Type = {
+    'nodejs': {
+        icon: <FaNode />,
+        description: 'NodeJS'
+    },
     'nextjs': {
         icon: <RiNextjsFill />,
         description: 'NextJS'
@@ -183,3 +189,7 @@ type technologiesDetails_Type = {
         description:    string;
     }
 }
+
+export const careerHistory = [
+
+]
