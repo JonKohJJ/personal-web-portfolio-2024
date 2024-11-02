@@ -1,6 +1,7 @@
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import LinkComponent from "../components/Links/LinkComponent";
 import { footerLinks } from "../constants/data";
+import { resume_link } from "../constants/data";
 
 export default function Hero() {
 
@@ -53,7 +54,7 @@ export default function Hero() {
                     <p className='fs-h5 lg:max-w-[800px]'>
                         I craft dynamic software solutions, from engaging web applications to transformative systems, empowering businesses to thrive in the digital era.
                     </p>
-                    <PrimaryButton title='View My Resume' href='/Jonathan%20Koh%20Resume%202024.pdf' openInNewTab={true} additionalClasses='mt-6 lg:mt-10'/>
+                    <PrimaryButton title='View My Resume' href={resume_link} openInNewTab={true} additionalClasses='mt-6 lg:mt-10'/>
                 </div>
 
                 <div className='hero-bottom-right hidden

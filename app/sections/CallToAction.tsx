@@ -2,6 +2,7 @@ import Image from "next/image";
 import Profile_Image from '../../public/images/profile.jpeg'
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import TypingText from "../components/TypingText";
+import { resume_link } from "../constants/data";
 
 export default function CallToAction() {
   return (
@@ -41,7 +42,7 @@ export default function CallToAction() {
 
             </div>
 
-            <PrimaryButton title='View My Resume' href='/Jonathan%20Koh%20Resume%202024.pdf' openInNewTab={true} />
+            <PrimaryButton title='View My Resume' href={resume_link} openInNewTab={true} />
 
         </section>
     </div>

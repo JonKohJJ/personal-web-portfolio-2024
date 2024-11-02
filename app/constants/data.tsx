@@ -13,6 +13,9 @@ import { StaticImageData } from "next/image";
 import Tithely_Hero_Image from '../../public/images/Tithely_Hero_Image.png'
 import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
 
+
+export const resume_link:string = '/Jonathan%20Koh%20Resume_2025.pdf'
+
 export const navigationLinks = [
     // {
     //     title:              'About',
@@ -21,10 +24,11 @@ export const navigationLinks = [
     // },
     {
         title:              'View My Resume',
-        href:               '/Jonathan%20Koh%20Resume%202024.pdf',
+        href:               resume_link,
         hasDestination:     true,
     },
 ]
+
 
 export const footerLinks = [
     {
