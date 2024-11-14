@@ -9,9 +9,13 @@ import { RiSupabaseFill } from "react-icons/ri";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { StaticImageData } from "next/image";
+import { SiDrizzle } from "react-icons/si";
+import { SiClerk } from "react-icons/si";
+import { SiStripe } from "react-icons/si";
 
 import Tithely_Hero_Image from '../../public/images/Tithely_Hero_Image.png'
 import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
+import Saas_Starter_Template_Hero_Image from '../../public/images/Saas_Starter_Template_Hero.png'
 
 
 export const resume_link:string = '/Jonathan%20Koh%20Resume_2025.pdf'
@@ -44,11 +48,24 @@ export const footerLinks = [
 ]
 
 export const projectChildren = [
+    'Saas-Starter-Template',
     'Tithely',
     'Dojo',
 ]
 
 export const projectChildrenDetails: projectChildrenDetails_Type = {
+    'Saas-Starter-Template': {
+        title:              'Saas Starter Template', 
+        subTitle_short:     'Saas features all wrapped in a simple Todo App',
+        year:               2024,
+        subTitle_long:      'A full-stack SaaS template built with Next.js, featuring user authentication via Clerk, Stripe payment integration, permissions-based structure, and database management with Drizzle and Supabase. Developers can clone and build upon this foundational code base, saving time on setup and focusing on growing their product.',
+        description:        [],
+        href:               '/projects/Saas-Starter-Template',
+        href_livesite:      'https://saas-starter-template-2025.vercel.app/',
+        href_github:        'https://github.com/JonKohJJ/saas-starter-template-2025',
+        technologies:       ['nodejs', 'tailwind', 'typescript', 'supabase', 'drizzle', 'clerk', 'stripe'],
+        hero_image:         Saas_Starter_Template_Hero_Image
+    },
     'Tithely': {
         title:              'Tithely', 
         subTitle_short:     'Finance Budgeting and Tracking Web Application',
@@ -184,7 +201,19 @@ export const technologiesDetails: technologiesDetails_Type = {
     'css': {
         icon: <FaCss3Alt />,
         description: 'CSS'
-    }
+    },
+    'clerk': {
+        icon: <SiClerk />,
+        description: 'Clerk'
+    },
+    'stripe': {
+        icon: <SiStripe />,
+        description: 'Stripe'
+    },
+    'drizzle': {
+        icon: <SiDrizzle />,
+        description: 'Drizzle'
+    },
 }
 
 type technologiesDetails_Type = {
