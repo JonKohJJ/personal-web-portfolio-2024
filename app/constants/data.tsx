@@ -18,7 +18,7 @@ import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
 import Saas_Starter_Template_Hero_Image from '../../public/images/Saas_Starter_Template_Hero.png'
 
 
-export const resume_link:string = '/Jonathan_Koh_Resume.pdf'
+export const resume_link:string = '/Jonathan_Koh_SWE_Resume.pdf'
 
 export const navigationLinks = [
     // {
