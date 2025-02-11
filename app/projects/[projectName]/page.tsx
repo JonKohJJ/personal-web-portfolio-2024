@@ -35,7 +35,7 @@ export default function ProjectDetails({
                     alt={`${projectDetails.title} Hero Image`}
                     quality={100}
                     priority
-                    className='w-full h-full object-cover object-top'
+                    className='w-full h-full object-cover object-center'
                 />
             </div>
 

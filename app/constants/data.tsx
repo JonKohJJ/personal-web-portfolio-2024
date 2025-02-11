@@ -16,6 +16,7 @@ import { SiStripe } from "react-icons/si";
 import Tithely_Hero_Image from '../../public/images/Tithely_Hero_Image.png'
 import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
 import Saas_Starter_Template_Hero_Image from '../../public/images/Saas_Starter_Template_Hero.png'
+import placeholder_image from '../../public/images/placeholder.png'
 
 
 export const resume_link:string = '/Jonathan_Koh_SWE_Resume.pdf'
@@ -48,23 +49,23 @@ export const footerLinks = [
 ]
 
 export const projectChildren = [
-    'Saas-Starter-Template',
+    'Tithely-End-Game',
     'Tithely',
     'Dojo',
 ]
 
 export const projectChildrenDetails: projectChildrenDetails_Type = {
-    'Saas-Starter-Template': {
-        title:              'Saas Starter Template', 
-        subTitle_short:     'Saas features all wrapped in a simple Todo App',
-        year:               2024,
-        subTitle_long:      'A full-stack SaaS template built with Next.js, featuring user authentication via Clerk, Stripe payment integration, permissions-based structure, and database management with Drizzle and Supabase. Developers can clone and build upon this foundational code base, saving time on setup and focusing on growing their product.',
+    'Tithely-End-Game': {
+        title:              'Tithely v2', 
+        subTitle_short:     'My fourth and last iteration of my finance budgeting and tracking app',
+        year:               2025,
+        subTitle_long:      'A full-stack SaaS built with Next.js, featuring user authentication via Clerk, Stripe payment integration, permissions-based structure, and database management with Drizzle and Supabase. I have spent about 3 years building 4 iterations of this app and I would like this to be my last. The frontend still in development... But functionality-wise, everything works! You can still use it to track and budget your finances.',
         description:        [],
-        href:               '/projects/Saas-Starter-Template',
-        href_livesite:      'https://saas-starter-template-2025.vercel.app/',
-        href_github:        'https://github.com/JonKohJJ/saas-starter-template-2025',
-        technologies:       ['nodejs', 'tailwind', 'typescript', 'supabase', 'drizzle', 'clerk', 'stripe'],
-        hero_image:         Saas_Starter_Template_Hero_Image
+        href:               '/projects/Tithely-End-Game',
+        href_livesite:      'https://tithely-end-game-bicllpmqi-jonathan-kohs-projects.vercel.app/',
+        href_github:        'https://github.com/JonKohJJ/tithely-end-game',
+        technologies:       ['nextjs', 'nodejs', 'tailwind', 'typescript', 'supabase', 'drizzle', 'clerk', 'stripe'],
+        hero_image:         placeholder_image,
     },
     'Tithely': {
         title:              'Tithely', 
