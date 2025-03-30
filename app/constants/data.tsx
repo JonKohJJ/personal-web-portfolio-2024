@@ -62,7 +62,7 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
         subTitle_long:      'A full-stack SaaS built with Next.js, featuring user authentication via Clerk, Stripe payment integration, permissions-based structure, and database management with Drizzle and Supabase. I have spent about 3 years building 4 iterations of this app and I would like this to be my last. The frontend still in development... But functionality-wise, everything works! You can still use it to track and budget your finances.',
         description:        [],
         href:               '/projects/Tithely-End-Game',
-        href_livesite:      'https://tithely-end-game-bicllpmqi-jonathan-kohs-projects.vercel.app/',
+        href_livesite:      'https://tithely-end-game.vercel.app/',
         href_github:        'https://github.com/JonKohJJ/tithely-end-game',
         technologies:       ['nextjs', 'nodejs', 'tailwind', 'typescript', 'supabase', 'drizzle', 'clerk', 'stripe'],
         hero_image:         placeholder_image,
