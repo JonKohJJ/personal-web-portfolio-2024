@@ -56,13 +56,13 @@ export default function ProjectDetails({
                     <p className="fs-base">Build with:</p>
                     <div className="technologies-icons
                         flex 
-                        gap-4 
+                        gap-4
                         items-center
                     ">
                         {projectDetails.technologies.map((tech, index) => {
                             const IconComponent = technologiesDetails[tech].icon
                             return (
-                                <div key={index} className="technologies-icon-div h-[40px] w-[40px]">
+                                <div key={index} className="technologies-icon-div h-[30px] w-[30px]">
                                     {React.cloneElement(IconComponent, { className: "w-full h-full" })}
                                 </div>
                             )

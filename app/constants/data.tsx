@@ -15,8 +15,8 @@ import { SiStripe } from "react-icons/si";
 
 import Tithely_Hero_Image from '../../public/images/Tithely_Hero_Image.png'
 import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
-import Saas_Starter_Template_Hero_Image from '../../public/images/Saas_Starter_Template_Hero.png'
 import placeholder_image from '../../public/images/placeholder.png'
+import Tithely_End_Game_Hero_Image from '../../public/images/Tithely_End Game_Hero_Image.png'
 
 
 export const resume_link:string = '/Jonathan_Koh_SWE_Resume.pdf'
@@ -64,8 +64,8 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
         href:               '/projects/Tithely-End-Game',
         href_livesite:      'https://tithely-end-game.vercel.app/',
         href_github:        'https://github.com/JonKohJJ/tithely-end-game',
-        technologies:       ['nextjs', 'nodejs', 'tailwind', 'typescript', 'supabase', 'drizzle', 'clerk', 'stripe'],
-        hero_image:         placeholder_image,
+        technologies:       ['nextjs', 'reactjs', 'tailwind', 'typescript', 'supabase', 'drizzle', 'clerk', 'stripe'],
+        hero_image:         Tithely_End_Game_Hero_Image,
     },
     'Tithely': {
         title:              'Tithely', 
