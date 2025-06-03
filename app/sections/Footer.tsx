@@ -34,7 +34,7 @@ export default function Footer() {
             </div>
 
             <div className='lg:flex gap-8'>
-                <p className='fs-caption mb-[10px] lg:mb-0'>&copy; {new Date().getFullYear()} All Rights Reserved. Coded with ❤️️</p>
+                <p className='fs-caption mb-[10px] lg:mb-0'>&copy; 2024 All Rights Reserved. Coded with ❤️️</p>
                 <LinkComponent title='Portfolio V1 (2021)' href='https://jonkohjj.github.io/Personal-Web-Portfolio-2021/' hasDestination={true}
                     additionalClasses='mr-4 md:mr-8 last:mr-0 opacity-[0.6]' 
                 />
