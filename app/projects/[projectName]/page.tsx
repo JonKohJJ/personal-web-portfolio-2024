@@ -3,6 +3,8 @@ import { projectChildrenDetails, technologiesDetails } from "@/app/constants/dat
 import React from "react"
 import Image from "next/image";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return [
     { projectName: 'Tithely' },
