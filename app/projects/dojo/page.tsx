@@ -3,24 +3,9 @@ import { projectChildrenDetails, technologiesDetails } from "@/app/constants/dat
 import React from "react"
 import Image from "next/image";
 
-export async function generateStaticParams() {
-  return [
-    { projectName: 'Tithely' },
-    { projectName: 'Dojo' },
-  ];
-}
+export default function Dojo() {
 
-export default function ProjectDetails({ 
-    
-    params
-
-}: { 
-
-    params: { projectName: string }
-
-}) {
-
-    let projectDetails = projectChildrenDetails[params.projectName]
+    let projectDetails = projectChildrenDetails["Dojo"]
 
     return (
         <div className='wrapper

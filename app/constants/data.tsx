@@ -15,7 +15,6 @@ import { SiStripe } from "react-icons/si";
 
 import Tithely_Hero_Image from '../../public/images/Tithely_Hero_Image.png'
 import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
-import Tithely_End_Game_Hero_Image from '../../public/images/Tithely_End Game_Hero_Image.png'
 
 
 export const resume_link:string = '/Jonathan_Koh_SWE_Resume.pdf'
@@ -84,7 +83,7 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
                                     '5. Show Actual Expenses (this will exclude claims and fixed expenses)',
                                 ]
                             ],
-        href:               '/projects/Tithely',
+        href:               '/projects/tithely',
         href_livesite:      'https://jonkohjj.github.io/tithely-supabase/',
         href_github:        'https://github.com/JonKohJJ/tithely-supabase',
         technologies:       ['nodejs', 'reactjs', 'tailwind', 'typescript', 'vite', 'supabase'],
@@ -120,7 +119,7 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
                                     '12. Firestore Rules',
                                 ],
                             ],
-        href:               '/projects/Dojo',
+        href:               '/projects/dojo',
         href_livesite:      'https://thedojosite-33599.firebaseapp.com',
         href_github:        'https://github.com/JonKohJJ/the-dojo',
         technologies:       ['nodejs', 'reactjs', 'css', 'firebase'],
