@@ -48,24 +48,11 @@ export const footerLinks = [
 ]
 
 export const projectChildren = [
-    'Tithely-End-Game',
     'Tithely',
     'Dojo',
 ]
 
 export const projectChildrenDetails: projectChildrenDetails_Type = {
-    'Tithely-End-Game': {
-        title:              'Tithely v2', 
-        subTitle_short:     'My fourth and last iteration of my finance budgeting and tracking app',
-        year:               2025,
-        subTitle_long:      'A full-stack SaaS built with Next.js, featuring user authentication via Clerk, Stripe payment integration, permissions-based structure, and database management with Drizzle and Supabase. I have spent about 3 years building 4 iterations of this app and I would like this to be my last. The frontend still in development... But functionality-wise, everything works! You can still use it to track and budget your finances.',
-        description:        [],
-        href:               '/projects/Tithely-End-Game',
-        href_livesite:      'https://tithely-end-game.vercel.app/',
-        href_github:        'https://github.com/JonKohJJ/tithely-end-game',
-        technologies:       ['nextjs', 'reactjs', 'tailwind', 'typescript', 'supabase', 'drizzle', 'clerk', 'stripe'],
-        hero_image:         Tithely_End_Game_Hero_Image,
-    },
     'Tithely': {
         title:              'Tithely', 
         subTitle_short:     'Finance Budgeting and Tracking Web Application',

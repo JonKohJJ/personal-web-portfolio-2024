@@ -1,8 +1,8 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 const TypingText: React.FC = () => {
-  const words = ['opportunities', 'collaborations', 'ideas'];
+  const words = useMemo(() => ['opportunities', 'collaborations', 'ideas'], []);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -44,7 +44,7 @@ const TypingText: React.FC = () => {
     }
 
     return () => clearTimeout(timeout);
-  }, [displayedText, isDeleting, currentWordIndex]);
+  }, [displayedText, isDeleting, currentWordIndex, words]);
 
   // Format the index as "01", "02", etc.
   const formattedIndex = String(currentWordIndex + 1).padStart(2, '0');
