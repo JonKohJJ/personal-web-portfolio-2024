@@ -83,7 +83,7 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
                                     '5. Show Actual Expenses (this will exclude claims and fixed expenses)',
                                 ]
                             ],
-        href:               '/projects/tithely',
+        href:               '/projects/Tithely',
         href_livesite:      'https://jonkohjj.github.io/tithely-supabase/',
         href_github:        'https://github.com/JonKohJJ/tithely-supabase',
         technologies:       ['nodejs', 'reactjs', 'tailwind', 'typescript', 'vite', 'supabase'],
@@ -119,7 +119,7 @@ export const projectChildrenDetails: projectChildrenDetails_Type = {
                                     '12. Firestore Rules',
                                 ],
                             ],
-        href:               '/projects/dojo',
+        href:               '/projects/Dojo',
         href_livesite:      'https://thedojosite-33599.firebaseapp.com',
         href_github:        'https://github.com/JonKohJJ/the-dojo',
         technologies:       ['nodejs', 'reactjs', 'css', 'firebase'],
