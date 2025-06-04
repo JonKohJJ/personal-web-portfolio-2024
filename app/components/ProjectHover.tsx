@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image'; 
 import { ProjectDetailsProps } from '../constants/data';
+import Link from 'next/link';
 
 const ProjectHover = ({ projectDetails }: { projectDetails: ProjectDetailsProps }) => {
 
@@ -26,7 +27,7 @@ const ProjectHover = ({ projectDetails }: { projectDetails: ProjectDetailsProps 
     };
 
     return (
-        <a
+        <Link
             href={href}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -89,7 +90,7 @@ const ProjectHover = ({ projectDetails }: { projectDetails: ProjectDetailsProps 
                     opacity: showImage ? 1 : 0,
                 }}
             />
-        </a>
+        </Link>
     );
 };
 
