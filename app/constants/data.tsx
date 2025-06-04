@@ -17,7 +17,7 @@ import Tithely_Hero_Image from '../../public/images/Tithely_Hero_Image.png'
 import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
 
 
-export const resume_link:string = '/Jonathan_Koh_SWE_Resume.pdf'
+export const resume_link:string = 'Resume_2024.pdf'
 
 export const navigationLinks = [
     {
