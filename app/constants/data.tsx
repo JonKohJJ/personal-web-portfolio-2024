@@ -21,11 +21,6 @@ import Tithely_End_Game_Hero_Image from '../../public/images/Tithely_End Game_He
 export const resume_link:string = '/Jonathan_Koh_SWE_Resume.pdf'
 
 export const navigationLinks = [
-    // {
-    //     title:              'About',
-    //     href:               '/about',
-    //     hasDestination:     false,
-    // },
     {
         title:              'View My Resume',
         href:               resume_link,

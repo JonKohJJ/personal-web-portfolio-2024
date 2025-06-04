@@ -4,10 +4,12 @@ import React from "react"
 import Image from "next/image";
 import { projectChildren } from "@/app/constants/data";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return projectChildren.map((projectName) => ({
     projectName,
-  }));
+  }))
 }
 
 export default function ProjectDetails({ 
