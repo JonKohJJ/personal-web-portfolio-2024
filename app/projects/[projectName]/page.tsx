@@ -2,14 +2,12 @@ import PrimaryButton from "@/app/components/Buttons/PrimaryButton"
 import { projectChildrenDetails, technologiesDetails } from "@/app/constants/data"
 import React from "react"
 import Image from "next/image";
-import { projectChildren } from "@/app/constants/data";
-
-export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return projectChildren.map((projectName) => ({
-    projectName,
-  }))
+  return [
+    { projectName: 'Tithely' },
+    { projectName: 'Dojo' },
+  ];
 }
 
 export default function ProjectDetails({ 
