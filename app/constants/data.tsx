@@ -15,7 +15,6 @@ import { SiStripe } from "react-icons/si";
 
 import Tithely_Hero_Image from '../../public/images/Tithely_Hero_Image.png'
 import Dojo_Hero_Image from '../../public/images/Dojo_Hero_Image.png'
-import placeholder_image from '../../public/images/placeholder.png'
 import Tithely_End_Game_Hero_Image from '../../public/images/Tithely_End Game_Hero_Image.png'
 
 
